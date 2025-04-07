@@ -1,0 +1,95 @@
+/* App.jsx */
+.App {
+    display: flex; /* 펼침 (기본값은 가로방향) */
+    flex-direction: column; /* 세로방향으로 */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* 산세리프 계열 폰트 적용 */
+    margin: 0 auto; /* App 클래스가 적용된 요소(div)의 여백. 상하여백 0, 좌우여백 자동설정 */
+    width: 500px; /* App 클래스가 적용된 요소의 너비 500px로 설정 */
+}
+/* Header.jsx */
+/* 모든 h1 요소에 이 스타일을 적용합니다. */
+/* App.css가 App.jsx로 불려갔으므로, App.jsx의 하위 파일에 있는 모든 h1에 이 스타일이 적용됩니다. */
+/* Tue Apr 08 2025 */
+h1 {
+    /* 기본값으로 적용된 여백 제거 */
+    margin: 30px 0;
+    color: dodgerblue;
+}
+/* 오늘은 */
+h2 {
+    margin: 0;
+}
+
+/* Editor.jsx */
+.editorWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* 새로운 Todo...(텍스트 입력) */
+.todoInput {
+    width: 100%;
+    height: 45px; /* 세로 크기(=요소의 높이) */
+    padding: 0 10px; /* 내부 여백 */
+    outline: none; /* 클릭하면 나오는 파란 테두리 제거 */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.todoInput:focus {
+    border: 1px solid dodgerblue;
+}
+/* 추가(버튼) */
+.todoButton {
+    width: 100px;
+    color: white; /* 글자 색 */
+    background-color: dodgerblue; /* 배경 색 */
+    border: none;
+    border-radius: 5px; /* 모서리 3px만큼 둥글게 */
+}
+/* 마우스 올렸을 때 */
+.todoButton:hover {
+    background-color: rgb(24, 129, 233);
+}
+
+/* List.jsx */
+/* 검색어를 입력하세요 */
+.searchBar {
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+/* 클릭 시 내부 테두리 색 변화 */
+.searchBar:focus {
+    border-bottom: 1px solid dodgerblue;
+}
+/* 체크박스, 본문, options 묶음 (한 줄) */
+.todoList {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.8em;
+}
+/* 날짜, 삭제버튼 묶음 */
+.options {
+    float: right;
+}
+/* 투두리스트 본문내용 */
+.todoContent {
+    margin-left: 20px;
+    margin-right: auto;
+}
+/* 날짜 */
+.todoDate {
+    color: #888;
+}
+/* 삭제버튼 */
+.deleteButton {
+    margin-left: 20px;
+    border: none;
+    color: #888;
+    border-radius: 5px;
+    padding: 5px 7px;
+}
